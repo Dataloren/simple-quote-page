@@ -48,13 +48,15 @@ table {
 }
 * {
     box-sizing: border-box;
+	
+/*Page basic styles*/	
 }
 body {
 	margin:0;
 	padding:0;
 	width: 100%;
 	height: 100vh;
-	background: url('/assets/389225main_sw_1965_full.jpg') no-repeat center;
+	background: url('assets/389225main_sw_1965_full.jpg') no-repeat center;
 	background-size: cover;
 }
 .wrapper {
@@ -80,4 +82,10 @@ body {
 	color: ghostwhite;
 	text-shadow: 1px 1px black;
 	padding-top: 3%;	
-}
+	
+	
+	/*media queries*/	
+	@media only screen and (max-width: 480px){
+		body {
+			background-image: url('assets/389225main_sw_1965_medium.jpg') right no-repeat cover;		
+		}
