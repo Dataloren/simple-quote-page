@@ -61,26 +61,21 @@ body {
 	height: 100vh;
 	background: url('assets/reading.jpg') no-repeat center;
 	background-size: cover;	
-}
-.wrapper {
-	width: 90%;
-	margin: 0 auto;
-	text-align: center;
-	position:relative;
-	padding: 2%;		
+	
 }
 .herotext {
-	display:inline-block;
-	position: absolute;
 	writing-mode: vertical-rl;
 	font-size: 1.5rem;
 	color: ghostwhite;
 	text-shadow: 2px 2px black;
 	font-weight: 700; 
 	line-height: 2;
-	padding-left: 40%;
+	padding: 5%;
+	text-align: right;
+	float: right;
 	}
-.author {
+
+p {
 	writing-mode: vertical-rl;
 	font-size: 1.2rem;
 	color: ghostwhite;
@@ -97,24 +92,21 @@ body {
 			background-repeat: no-repeat;
 			background-position: 20% center;
 			background-size: cover;
-			}
-		.wrapper {
-			width: 65%;
-			text-align: center;
-			position:relative; 
-			vertical-align: middle;
-		}
+			position: relative;
+						}
+
 		.herotext {
-			display:inline-block;
 			writing-mode: vertical-rl;
-			font-size: 1.2rem;
-			position: absolute;    
-			padding-left: 40%;
-					}
-		.author {
+			font-size: 1.3rem;
+			position: absolute;
+			text-align: right;
+			width: 95%;
+			height: 95%;
+   
+		}
+					
+		p {
 			writing-mode: vertical-rl;
 			font-size: 1rem;
-			position: absolute;
-  		margin-left: 20%;							
-		}
-	}
+			}
+}

@@ -63,22 +63,23 @@ body {
 	height: 100vh;
 	background: url('assets/daydream.jpg') no-repeat center;
 	background-size: cover;	
+	position: relative;
 }
-.wrapper {
-	width: 90%;
-	margin: 0 auto;
-	vertical-align: middle;
-	padding-top: 10rem;
-}
+
 .herotext {
+	position:absolute;
+	width: 90%;
 	font-size: 3rem;
 	color: ghostwhite;
 	text-shadow: 2px 2px black;
 	font-weight: 700; 
 	text-align: center;
 	line-height: 1;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
 }
-.author {
+p {
 	font-family:'Open Sans Condensed', sans-serif;
 	font-style: italic;
 	font-size: 2rem;
@@ -97,30 +98,19 @@ body {
 			background-repeat: no-repeat;
 			background-position: 50% center;
 			background-size: cover;
+			position:relative;
 			}
-		.wrapper {
-			width: 70%;
-			margin: 0 auto;
-			text-align: center;
-			position:relative; 
-		}
 		.herotext {
 			font-size: 2rem;
-			width: 86%;
+			width: 90%;
 			position: absolute;
+			vertical-align: middle;
       top: 50%;
       left: 50%;
-      margin-right: -50%;
       transform: translate(-50%, -50%)
 					}
-		.author {
+		p {
 			font-size: 1.2rem;
-			position: absolute;
-      top: 63%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translateX(50%);
-			transform: translateY(67px);
-			padding-top: 2%;							
+			text-align: right;						
 		}
-	}
+}

@@ -86,7 +86,7 @@ table {
 .dropdown-content a:hover {
 	     background-color: transparent;
 	     color: deepskyblue;
-	     text-shadow: 2px, black; 
+	     text-shadow: 2px black; 
 	     border: 2px solid grey;
 	     border-radius: 4px;		  
 	          	     	     }
@@ -98,7 +98,7 @@ table {
 .dropdown:hover .dropbtn {
     background-color:transparent;
 	  color:deepskyblue;	
-	  text-shadow: 2px, black;
+	  text-shadow: 2px black;
 }
 /*Page basic styles*/	
 
@@ -107,14 +107,12 @@ body {
 	height: 100vh;
 	background: url('assets/389225main_sw_1965_full.jpg') no-repeat center;
 	background-size: cover;	
+	position: relative;
 }
-.wrapper {
-	width: 90%;
-	margin: 0 auto;
-	vertical-align: middle;
-	padding-top: 10rem;
-}
+
 .herotext {
+	position:absolute;
+	width: 90%;
 	font-family:'Tangerine', cursive;
 	font-size: 4rem;
 	color: ghostwhite;
@@ -122,8 +120,12 @@ body {
 	font-weight: 700; 
 	text-align: center;
 	line-height: 1;
-}
-.author {
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	}
+
+ p {
 	font-family:'Open Sans Condensed', sans-serif;
 	font-style: italic;
 	font-size: 2rem;
@@ -147,30 +149,21 @@ body {
 			background-repeat: no-repeat;
 			background-position: 20% center;
 			background-size: cover;
+			position:relative;
 			}
-		.wrapper {
-			width: 70%;
-			margin: 0 auto;
-			text-align: center;
-			position:relative; 
-		}
+	
 		.herotext {
 			font-size: 3rem;
-			width: 86%;
+		  width: 90%;
 			position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%)
-					}
-		.author {
+   		vertical-align: middle;
+			top: 50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		 p {
 			font-size: 1.2rem;
-			position: absolute;
-      top: 63%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translateX(50%);
-			transform: translateY(75px);
-			padding-top: 5%;							
+			text-align: right;  
 		}
 	}
